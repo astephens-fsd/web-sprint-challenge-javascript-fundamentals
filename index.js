@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-Becasue nestedFunction is within the same enclosed scope as internal variable. nestedFunction is alos where the closure happens and reaches out of its function to myFunction for the internal variable. We can pass data down in this case.
+// Becasue nestedFunction is within the same enclosed scope as internal variable. nestedFunction is also where the closure happens and reaches out of its function to myFunction for the internal variable. We can pass data down in this case.
 
 
 
@@ -29,11 +29,15 @@ Becasue nestedFunction is within the same enclosed scope as internal variable. n
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  let sum = 0;
+  for(let i = 1; i <= number; i++){
+    sum += i;
+    }
+    return sum;
   }
  
+  console.log('Task 2: Counter', summation(100));
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
