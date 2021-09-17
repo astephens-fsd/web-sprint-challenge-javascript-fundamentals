@@ -30,6 +30,8 @@ Edit this document to include your answers after each question. Make sure to lea
 .filter is removing elements we do not need or want and creates a new array. A case for .filter would be to filter out tasks that took less than 2 hours to complete from a tasks array.
 
 2. Explain the difference between a callback and a higher order function.
+Callback functions are passed to another function as an argument. First we will define the function, and will be called and invoked at a later time.
+Higher order functions can take other functions as their arguments.
 
 3. Explain what a closure is.
 
