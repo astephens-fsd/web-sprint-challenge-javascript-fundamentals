@@ -61,9 +61,17 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  
+
+  function animalNames(zooAnimals){
+    const displayNames = [];
+    zooAnimals.forEach(function(item){
+      displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
+    })
+    return displayNames;
   }
+
+  console.log('Request 1: .forEach', animalNames(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -71,11 +79,17 @@ const zooAnimals = [
   Using lowerCaseNames use .map() to create a new array of strings with the animal's names in lowercase and return the new array. 
   For example: ['jackal, asiatic', .....]
   */
+ //.map new array 
+ //
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(zooAnimals){
+    const newArray = zooAnimals.map(function(item){
+      return item.animal_name.toLowerCase();
+    });
+    return newArray;
   }
   
+  console.log('Request 2: .map', lowerCaseNames(zooAnimals));
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
