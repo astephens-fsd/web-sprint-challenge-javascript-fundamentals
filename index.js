@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-// Becasue nestedFunction is within the same enclosed scope as internal variable. nestedFunction is also where the closure happens and reaches out of its function to myFunction for the internal variable. We can pass data down in this case.
+// Becasue nestedFunction is within the same enclosed scope as internal variable and child to myFunction. myFunction is the parent and is also where the closure happens as nestedFunction reaches out of its function to myFunction for the internal variable. We can pass data down in this case.
 
 
 

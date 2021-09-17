@@ -37,8 +37,13 @@ Higher order functions can take other functions as their arguments.
 A closure is very similar to scope in that the parent function has nested functions within that will have access to the parent function's properties/data.
 
 4. Describe the four principles of the 'this' keyword.
+Implicit - when the function is told to look to the left of the dot, this points to the object which the function is named.
+Explicit - this in function is called by call(), apply(), or bind().
+New Binding - this keyword will be used in the new constructor that wil point to a new object created. 
+Window Binding - this keyword will be used i the function when none of the rules above work (no bind, apply or call are used or a new obj created) and defaults to window object or global object in non-strict mode or undefined in strict mode.
 
 5. Why do we need super() in an extended class?
+super()is a keyword used to extend classes so we may have access to the parent function and its properties or objects.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
