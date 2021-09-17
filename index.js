@@ -140,21 +140,23 @@ function add(a, b, consumeCb){
     return consumeCb = (a + b);
   }
 
-  console.log(consume(2, 5, add));
+  console.log('Step 2: add', consume(2, 5, add));
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
-function multiply(/*Your Code Here */){
-   /*Your Code Here */
+function multiply(a, b, consumeCb){
+   return consumeCb = (a * b);
   }
 
+  console.log('Step 2: multiply', consume(2, 5, multiply));
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
-function greeting(/*Your Code Here */){
-   return /*Your Code Here */
+function greeting(first, last, consumeCb){
+   return consumeCb = `Hello ${first} ${last}, nice to meet you!`;
   }
   
+  console.log('Step 2: greeting', consume('Ashley', 'Stephens', greeting));
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
   // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
