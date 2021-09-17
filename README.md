@@ -34,6 +34,7 @@ Callback functions are passed to another function as an argument. First we will 
 Higher order functions can take other functions as their arguments.
 
 3. Explain what a closure is.
+A closure is very similar to scope in that the parent function has nested functions within that will have access to the parent function's properties/data.
 
 4. Describe the four principles of the 'this' keyword.
 
